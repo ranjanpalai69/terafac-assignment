@@ -1,0 +1,121 @@
+/* General App Container */
+.app-container {
+  background-color: #e8f5e9; /* Light green background for a soothing effect */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Title Style */
+.app-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2e7d32; /* Dark green for title */
+}
+
+/* Input Field and Buttons */
+.input-field,
+.json-editor,
+.fetch-button,
+.render-button {
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+/* Input field hover effects */
+.input-field:hover,
+.json-editor:hover,
+.fetch-button:hover,
+.render-button:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Editor and Output Container Styles */
+.editor-container,
+.output-container {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* JSON Editor Scrollbar Styling */
+.json-editor {
+  max-height: 400px; /* Increased fixed height for editor */
+  overflow-y: auto; /* Scroll when content overflows */
+}
+
+/* Output Section with Fixed Height */
+.output-section {
+  max-height: 300px; /* Fixed height for output */
+  overflow: auto; /* Allow scrolling */
+}
+
+/* Output Content Styling */
+.output-content {
+  white-space: pre-wrap; /* Preserve whitespace */
+  max-width: 100%; /* Ensures content stays within bounds */
+  overflow: auto; /* Allow scrollbars */
+  padding: 10px; /* Padding inside output */
+}
+
+/* Custom Scrollbar Styling for JSON Editor */
+.json-editor::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+.json-editor::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Track color */
+  border-radius: 10px; /* Rounded edges */
+}
+
+.json-editor::-webkit-scrollbar-thumb {
+  background: #76c7c0; /* Handle color */
+  border-radius: 10px; /* Rounded edges */
+}
+
+.json-editor::-webkit-scrollbar-thumb:hover {
+  background: #48b8a0; /* Handle color on hover */
+}
+
+/* Custom Scrollbar Styling for Output Section */
+.output-section::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+.output-section::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Track color */
+  border-radius: 10px; /* Rounded edges */
+}
+
+.output-section::-webkit-scrollbar-thumb {
+  background: #76c7c0; /* Handle color */
+  border-radius: 10px; /* Rounded edges */
+}
+
+.output-section::-webkit-scrollbar-thumb:hover {
+  background: #48b8a0; /* Handle color on hover */
+}
+
+/* Section Title Style */
+.section-title {
+  margin-bottom: 10px;
+}
+
+/* Error Message Style */
+.error-message {
+  font-weight: bold;
+  text-align: center;
+  color: #d32f2f; /* Red color for error messages */
+  animation: fadeIn 0.5s ease; /* Adding fade-in effect */
+}
+
+/* Animation for error message */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
